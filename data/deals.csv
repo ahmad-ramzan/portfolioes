@@ -1,0 +1,9 @@
+Deal name,Pipeline,Deal stage,Amount,Close date,Deal owner,Associated contact (email),Associated company,Lead source,Demo date,Lost reason
+Northwind — Fleet Tracking Rollout,Sales Pipeline (Demo),Qualified,48000,2026-08-15,Alex Rivera,maria.gonzalez@northwindlogistics.com,Northwind Logistics,Inbound - Website,,
+Northwind — Warehouse Add-on,Sales Pipeline (Demo),Contacted,12500,2026-08-30,Alex Rivera,david.chen@northwindlogistics.com,Northwind Logistics,Outbound - Cold Email,,
+BrightLeaf — Analytics Starter,Sales Pipeline (Demo),New Lead,6000,2026-09-10,Jordan Lee,priya.nair@brightleaf.io,BrightLeaf Analytics,Inbound - Demo Request,,
+BrightLeaf — Enterprise Upgrade,Sales Pipeline (Demo),Demo Booked,72000,2026-07-25,Jordan Lee,tom.baker@brightleaf.io,BrightLeaf Analytics,Referral,2026-07-18,
+BrightLeaf — Sales Team Seats,Sales Pipeline (Demo),New Lead,9000,2026-09-20,Jordan Lee,kevin.alvarez@brightleaf.io,BrightLeaf Analytics,Event - Trade Show,,
+Coastal — POS Integration,Sales Pipeline (Demo),Closed Won,95000,2026-06-20,Alex Rivera,sarah.okafor@coastalretail.com,Coastal Retail Group,Referral,2026-06-05,
+Coastal — Loyalty Module,Sales Pipeline (Demo),Demo Booked,34000,2026-07-30,Jordan Lee,emily.torres@coastalretail.com,Coastal Retail Group,Inbound - Website,2026-07-22,
+Coastal — Finance Reporting,Sales Pipeline (Demo),Closed Lost,28000,2026-06-10,Alex Rivera,james.whitfield@coastalretail.com,Coastal Retail Group,Outbound - Cold Call,,Went with competitor

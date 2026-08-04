@@ -1,0 +1,101 @@
+#,Company,Decision Maker,Title,Email,LinkedIn URL,Phone,Verified Status
+1,BeaconHub,Ethan Ford,Director of Growth Marketing,ethan.ford@beaconhub.ai,https://www.linkedin.com/in/ethan-ford-60/,+1 (347) 555-5339,Verified
+2,VantageDesk,Laura Nguyen,Senior Marketing Director,laura.nguyen@vantagedesk.co,https://www.linkedin.com/in/laura-nguyen-84/,+1 (798) 555-7543,Verified
+3,PeakStack,Sam Patel,Marketing Director,sam.patel@peakstack.ai,https://www.linkedin.com/in/sam-patel-21/,+1 (313) 555-3504,Catch-all
+4,KiteForge,Clara Hughes,Senior Marketing Director,clara.hughes@kiteforge.io,https://www.linkedin.com/in/clara-hughes-59/,+1 (811) 555-8668,Verified
+5,VantageLeaf,Peter Fischer,VP Demand Generation,peter.fischer@vantageleaf.io,https://www.linkedin.com/in/peter-fischer-97/,+1 (969) 555-5371,Verified
+6,NovaGrid,Miles Larsen,Director of Growth Marketing,miles.larsen@novagrid.ai,https://www.linkedin.com/in/miles-larsen-30/,+1 (204) 555-5315,Verified
+7,Summitly,Lena Sullivan,VP Demand Generation,lena.sullivan@summitly.co,https://www.linkedin.com/in/lena-sullivan-91/,+1 (824) 555-4258,Verified
+8,ByteDesk,Daniel Petrov,Head of Marketing,daniel.petrov@bytedesk.io,https://www.linkedin.com/in/daniel-petrov-86/,+1 (701) 555-1319,Verified
+9,ZenithBase,Kevin Petrov,Director of Brand Marketing,kevin.petrov@zenithbase.io,https://www.linkedin.com/in/kevin-petrov-40/,+1 (281) 555-2403,Verified
+10,NorthDesk,Amara Andersson,Director of Growth Marketing,amara.andersson@northdesk.com,https://www.linkedin.com/in/amara-andersson-26/,+1 (763) 555-3705,Unverified
+11,CoralSync,Chloe Blackwood,Head of Growth,chloe.blackwood@coralsync.com,https://www.linkedin.com/in/chloe-blackwood-79/,+1 (931) 555-6107,Unverified
+12,LumenStack,Noah Petrov,Head of Growth,noah.petrov@lumenstack.ai,https://www.linkedin.com/in/noah-petrov-25/,+1 (431) 555-2049,Verified
+13,AxonDesk,Leo Chen,Head of Growth,leo.chen@axondesk.com,https://www.linkedin.com/in/leo-chen-85/,+1 (208) 555-2163,Verified
+14,PulsePeak,Jack Baker,Director of Marketing,jack.baker@pulsepeak.io,https://www.linkedin.com/in/jack-baker-52/,+1 (727) 555-4899,Verified
+15,VertexDesk,Ben Andersson,Director of Brand Marketing,ben.andersson@vertexdesk.com,https://www.linkedin.com/in/ben-andersson-83/,+1 (685) 555-4981,Unverified
+16,Looply,Julia Romano,Senior Marketing Director,julia.romano@looply.io,https://www.linkedin.com/in/julia-romano-94/,+1 (563) 555-7939,Verified
+17,Signally,Isabel Meyer,Head of Marketing,isabel.meyer@signally.io,https://www.linkedin.com/in/isabel-meyer-61/,+1 (312) 555-5073,Verified
+18,UmbraSphere,Sofia Rossi,VP of Marketing,sofia.rossi@umbrasphere.com,https://www.linkedin.com/in/sofia-rossi-64/,+1 (486) 555-8579,Catch-all
+19,LumenDesk,Omar Okafor,VP Demand Generation,omar.okafor@lumendesk.io,https://www.linkedin.com/in/omar-okafor-16/,+1 (216) 555-2528,Unverified
+20,ByteSync,Talia Nguyen,Head of Growth,talia.nguyen@bytesync.ai,https://www.linkedin.com/in/talia-nguyen-71/,+1 (611) 555-1960,Verified
+21,BrightLogic,Nina Haddad,Director of Demand Generation,nina.haddad@brightlogic.co,https://www.linkedin.com/in/nina-haddad-68/,+1 (634) 555-8973,Verified
+22,DriftHub,Daniel Rossi,VP Demand Generation,daniel.rossi@drifthub.io,https://www.linkedin.com/in/daniel-rossi-84/,+1 (263) 555-6138,Verified
+23,AxonMetrics,Tom Baker,VP Demand Generation,tom.baker@axonmetrics.com,https://www.linkedin.com/in/tom-baker-17/,+1 (283) 555-4044,Verified
+24,NorthBase,Sarah Quinn,Director of Brand Marketing,sarah.quinn@northbase.ai,https://www.linkedin.com/in/sarah-quinn-25/,+1 (453) 555-1651,Catch-all
+25,JunoPilot,Gabriel Whitfield,Head of Growth,gabriel.whitfield@junopilot.co,https://www.linkedin.com/in/gabriel-whitfield-43/,+1 (886) 555-6147,Unverified
+26,Ionbox,Omar Fischer,Head of Marketing,omar.fischer@ionbox.co,https://www.linkedin.com/in/omar-fischer-68/,+1 (970) 555-2188,Verified
+27,DeltaPilot,Maria Meyer,VP Demand Generation,maria.meyer@deltapilot.io,https://www.linkedin.com/in/maria-meyer-19/,+1 (419) 555-9288,Unverified
+28,FathomPeak,Chloe Bennett,Director of Demand Generation,chloe.bennett@fathompeak.com,https://www.linkedin.com/in/chloe-bennett-57/,+1 (362) 555-8179,Verified
+29,DeltaStack,Zoe Novak,VP Demand Generation,zoe.novak@deltastack.io,https://www.linkedin.com/in/zoe-novak-95/,+1 (507) 555-2697,Unverified
+30,Novaly,Laura Fischer,Director of Demand Generation,laura.fischer@novaly.com,https://www.linkedin.com/in/laura-fischer-44/,+1 (820) 555-4450,Verified
+31,VertexFlow,Jack Larsen,Marketing Director,jack.larsen@vertexflow.ai,https://www.linkedin.com/in/jack-larsen-42/,+1 (295) 555-7939,Verified
+32,BrightWave,Ben Nair,Director of Demand Generation,ben.nair@brightwave.com,https://www.linkedin.com/in/ben-nair-91/,+1 (366) 555-8239,Verified
+33,NovaPeak,Adam Dubois,Marketing Director,adam.dubois@novapeak.com,https://www.linkedin.com/in/adam-dubois-79/,+1 (579) 555-3426,Verified
+34,DataGrid,Ryan Bennett,Head of Marketing,ryan.bennett@datagrid.co,https://www.linkedin.com/in/ryan-bennett-15/,+1 (416) 555-5088,Verified
+35,FathomDesk,Ruby Torres,VP of Marketing,ruby.torres@fathomdesk.ai,https://www.linkedin.com/in/ruby-torres-89/,+1 (443) 555-3662,Unverified
+36,CloudWorks,Marcus Romano,Head of Growth,marcus.romano@cloudworks.co,https://www.linkedin.com/in/marcus-romano-62/,+1 (474) 555-3608,Verified
+37,HelixLabs,Elena Torres,Head of Growth,elena.torres@helixlabs.ai,https://www.linkedin.com/in/elena-torres-38/,+1 (672) 555-6728,Catch-all
+38,PulseLeaf,Victor Patel,Head of Marketing,victor.patel@pulseleaf.com,https://www.linkedin.com/in/victor-patel-61/,+1 (486) 555-2137,Verified
+39,FathomStack,Miles Moreau,VP Demand Generation,miles.moreau@fathomstack.ai,https://www.linkedin.com/in/miles-moreau-96/,+1 (540) 555-1452,Unverified
+40,ScalePilot,Kevin Fischer,Director of Marketing,kevin.fischer@scalepilot.co,https://www.linkedin.com/in/kevin-fischer-14/,+1 (811) 555-8119,Verified
+41,HelixPilot,Grace Adeyemi,Marketing Director,grace.adeyemi@helixpilot.com,https://www.linkedin.com/in/grace-adeyemi-42/,+1 (926) 555-8144,Verified
+42,UmbraHub,Maria Blackwood,Director of Marketing,maria.blackwood@umbrahub.co,https://www.linkedin.com/in/maria-blackwood-65/,+1 (881) 555-6409,Verified
+43,SummitGrid,Gabriel Adeyemi,Senior Marketing Director,gabriel.adeyemi@summitgrid.ai,https://www.linkedin.com/in/gabriel-adeyemi-51/,+1 (914) 555-5844,Verified
+44,LoopSync,Adam Bennett,VP of Marketing,adam.bennett@loopsync.ai,https://www.linkedin.com/in/adam-bennett-96/,+1 (831) 555-5930,Verified
+45,BrightGrid,Noah Delgado,Senior Marketing Director,noah.delgado@brightgrid.co,https://www.linkedin.com/in/noah-delgado-36/,+1 (794) 555-6279,Verified
+46,LumenHub,Carlos Ivanov,Director of Marketing,carlos.ivanov@lumenhub.ai,https://www.linkedin.com/in/carlos-ivanov-31/,+1 (491) 555-9445,Verified
+47,CobaltPeak,Ruby Osei,Director of Demand Generation,ruby.osei@cobaltpeak.com,https://www.linkedin.com/in/ruby-osei-96/,+1 (431) 555-4262,Verified
+48,DataBase,Daniel Chen,Director of Marketing,daniel.chen@database.ai,https://www.linkedin.com/in/daniel-chen-88/,+1 (667) 555-7790,Verified
+49,LoopLogic,Clara Ford,Head of Growth,clara.ford@looplogic.ai,https://www.linkedin.com/in/clara-ford-61/,+1 (352) 555-1090,Verified
+50,KiteBase,Talia Torres,VP Demand Generation,talia.torres@kitebase.com,https://www.linkedin.com/in/talia-torres-99/,+1 (676) 555-1822,Verified
+51,NovaSphere,Adam Nguyen,VP Demand Generation,adam.nguyen@novasphere.com,https://www.linkedin.com/in/adam-nguyen-69/,+1 (773) 555-6198,Catch-all
+52,KiteDesk,Talia Ivanov,Director of Growth Marketing,talia.ivanov@kitedesk.ai,https://www.linkedin.com/in/talia-ivanov-30/,+1 (661) 555-5246,Verified
+53,TidalMetrics,Clara Moreau,Director of Growth Marketing,clara.moreau@tidalmetrics.com,https://www.linkedin.com/in/clara-moreau-45/,+1 (280) 555-5681,Verified
+54,CobaltWave,Omar Moreau,VP of Marketing,omar.moreau@cobaltwave.io,https://www.linkedin.com/in/omar-moreau-27/,+1 (437) 555-7275,Verified
+55,VertexPeak,Elena Cross,Head of Marketing,elena.cross@vertexpeak.ai,https://www.linkedin.com/in/elena-cross-62/,+1 (756) 555-8633,Verified
+56,VertexSync,Isabel Baker,Marketing Director,isabel.baker@vertexsync.ai,https://www.linkedin.com/in/isabel-baker-84/,+1 (984) 555-7232,Verified
+57,FathomGrid,Julia Gonzalez,VP Demand Generation,julia.gonzalez@fathomgrid.ai,https://www.linkedin.com/in/julia-gonzalez-63/,+1 (966) 555-9947,Verified
+58,RippleBase,Ivy Patel,Director of Growth Marketing,ivy.patel@ripplebase.co,https://www.linkedin.com/in/ivy-patel-65/,+1 (230) 555-7371,Verified
+59,ByteSphere,Leo Weber,VP Demand Generation,leo.weber@bytesphere.com,https://www.linkedin.com/in/leo-weber-89/,+1 (228) 555-7455,Verified
+60,CloudPeak,Felix Ford,Director of Growth Marketing,felix.ford@cloudpeak.ai,https://www.linkedin.com/in/felix-ford-27/,+1 (387) 555-1823,Verified
+61,OnyxWave,Chloe Haddad,Director of Demand Generation,chloe.haddad@onyxwave.co,https://www.linkedin.com/in/chloe-haddad-58/,+1 (971) 555-7906,Verified
+62,PrismLeaf,Chloe Whitfield,Head of Growth,chloe.whitfield@prismleaf.io,https://www.linkedin.com/in/chloe-whitfield-54/,+1 (866) 555-2124,Verified
+63,CloudBase,Miles Nair,Director of Brand Marketing,miles.nair@cloudbase.com,https://www.linkedin.com/in/miles-nair-12/,+1 (357) 555-4908,Verified
+64,NovaPilot,Laura Kowalski,Director of Demand Generation,laura.kowalski@novapilot.com,https://www.linkedin.com/in/laura-kowalski-69/,+1 (986) 555-7043,Verified
+65,Corally,Nina Quinn,Director of Marketing,nina.quinn@corally.com,https://www.linkedin.com/in/nina-quinn-49/,+1 (793) 555-1420,Unverified
+66,HelixLogic,Victor Ford,Director of Brand Marketing,victor.ford@helixlogic.com,https://www.linkedin.com/in/victor-ford-19/,+1 (908) 555-4978,Verified
+67,WillowLabs,Emily Novak,Senior Marketing Director,emily.novak@willowlabs.co,https://www.linkedin.com/in/emily-novak-78/,+1 (878) 555-7071,Unverified
+68,CobaltLeaf,Sarah Reyes,Director of Marketing,sarah.reyes@cobaltleaf.ai,https://www.linkedin.com/in/sarah-reyes-72/,+1 (644) 555-6934,Verified
+69,LatitudeSync,Clara Meyer,Director of Demand Generation,clara.meyer@latitudesync.com,https://www.linkedin.com/in/clara-meyer-76/,+1 (831) 555-9817,Catch-all
+70,OnyxSync,Miles Kowalski,Head of Growth,miles.kowalski@onyxsync.co,https://www.linkedin.com/in/miles-kowalski-51/,+1 (289) 555-5569,Verified
+71,OnyxPilot,Maya Nguyen,Marketing Director,maya.nguyen@onyxpilot.ai,https://www.linkedin.com/in/maya-nguyen-53/,+1 (707) 555-6325,Verified
+72,VertexCore,Marcus Andersson,Director of Demand Generation,marcus.andersson@vertexcore.co,https://www.linkedin.com/in/marcus-andersson-53/,+1 (811) 555-5526,Catch-all
+73,TidalHub,Adam Gonzalez,Senior Marketing Director,adam.gonzalez@tidalhub.io,https://www.linkedin.com/in/adam-gonzalez-40/,+1 (701) 555-4937,Verified
+74,RippleSphere,Elena Kowalski,Director of Demand Generation,elena.kowalski@ripplesphere.io,https://www.linkedin.com/in/elena-kowalski-21/,+1 (427) 555-7625,Catch-all
+75,ZenithPilot,Elena Nguyen,VP Demand Generation,elena.nguyen@zenithpilot.co,https://www.linkedin.com/in/elena-nguyen-70/,+1 (744) 555-6632,Verified
+76,CobaltCore,Ryan Delgado,Director of Demand Generation,ryan.delgado@cobaltcore.ai,https://www.linkedin.com/in/ryan-delgado-44/,+1 (458) 555-4777,Unverified
+77,Beaconly,Kevin Rossi,Head of Growth,kevin.rossi@beaconly.com,https://www.linkedin.com/in/kevin-rossi-34/,+1 (957) 555-8933,Verified
+78,TidalForge,Ben Vance,Head of Growth,ben.vance@tidalforge.co,https://www.linkedin.com/in/ben-vance-22/,+1 (504) 555-4727,Verified
+79,ZenithLeaf,Sam Sullivan,Marketing Director,sam.sullivan@zenithleaf.com,https://www.linkedin.com/in/sam-sullivan-45/,+1 (256) 555-5786,Unverified
+80,Ripplely,Elena Bennett,Director of Demand Generation,elena.bennett@ripplely.io,https://www.linkedin.com/in/elena-bennett-83/,+1 (681) 555-8843,Unverified
+81,ScaleLabs,Maya Larsen,Director of Marketing,maya.larsen@scalelabs.co,https://www.linkedin.com/in/maya-larsen-71/,+1 (267) 555-7565,Verified
+82,Latitudebox,Aaron Okafor,Head of Growth,aaron.okafor@latitudebox.co,https://www.linkedin.com/in/aaron-okafor-20/,+1 (322) 555-7818,Verified
+83,DeltaBase,Ivy Quinn,Director of Growth Marketing,ivy.quinn@deltabase.ai,https://www.linkedin.com/in/ivy-quinn-67/,+1 (505) 555-8025,Verified
+84,Deltaly,Gabriel Baker,Head of Growth,gabriel.baker@deltaly.com,https://www.linkedin.com/in/gabriel-baker-90/,+1 (471) 555-2330,Unverified
+85,ScaleDesk,Nina Nguyen,Marketing Director,nina.nguyen@scaledesk.io,https://www.linkedin.com/in/nina-nguyen-30/,+1 (619) 555-8381,Catch-all
+86,PrismGrid,Elena Quinn,Director of Demand Generation,elena.quinn@prismgrid.io,https://www.linkedin.com/in/elena-quinn-39/,+1 (924) 555-5632,Verified
+87,EmberPilot,Elena Meyer,Director of Marketing,elena.meyer@emberpilot.com,https://www.linkedin.com/in/elena-meyer-64/,+1 (758) 555-4683,Verified
+88,Quartzbox,Owen Cross,VP of Marketing,owen.cross@quartzbox.io,https://www.linkedin.com/in/owen-cross-17/,+1 (515) 555-5728,Unverified
+89,OnyxGrid,Maya Alvarez,VP Demand Generation,maya.alvarez@onyxgrid.ai,https://www.linkedin.com/in/maya-alvarez-44/,+1 (753) 555-9090,Verified
+90,CoralLabs,Maya Whitfield,Director of Brand Marketing,maya.whitfield@corallabs.ai,https://www.linkedin.com/in/maya-whitfield-51/,+1 (457) 555-1423,Verified
+91,WillowPilot,James Patel,Director of Demand Generation,james.patel@willowpilot.io,https://www.linkedin.com/in/james-patel-96/,+1 (791) 555-1659,Unverified
+92,PrismStack,Talia Sullivan,VP of Marketing,talia.sullivan@prismstack.ai,https://www.linkedin.com/in/talia-sullivan-45/,+1 (800) 555-8141,Verified
+93,MetricMetrics,Clara Andersson,Head of Marketing,clara.andersson@metricmetrics.co,https://www.linkedin.com/in/clara-andersson-62/,+1 (529) 555-2713,Verified
+94,JunoMetrics,Nina Larsen,Senior Marketing Director,nina.larsen@junometrics.co,https://www.linkedin.com/in/nina-larsen-94/,+1 (979) 555-1601,Verified
+95,BeaconFlow,Carlos Whitfield,Senior Marketing Director,carlos.whitfield@beaconflow.co,https://www.linkedin.com/in/carlos-whitfield-24/,+1 (727) 555-1018,Verified
+96,SignalHub,Ruby Marsh,Director of Growth Marketing,ruby.marsh@signalhub.co,https://www.linkedin.com/in/ruby-marsh-89/,+1 (841) 555-8242,Verified
+97,Vantagebox,Talia Baker,Director of Growth Marketing,talia.baker@vantagebox.co,https://www.linkedin.com/in/talia-baker-66/,+1 (325) 555-1472,Catch-all
+98,StackWorks,Clara Quinn,Marketing Director,clara.quinn@stackworks.co,https://www.linkedin.com/in/clara-quinn-80/,+1 (766) 555-7684,Verified
+99,Novabox,Kevin Meyer,VP Demand Generation,kevin.meyer@novabox.ai,https://www.linkedin.com/in/kevin-meyer-47/,+1 (923) 555-5479,Verified
+100,PrismBase,Isabel Kowalski,VP of Marketing,isabel.kowalski@prismbase.ai,https://www.linkedin.com/in/isabel-kowalski-80/,+1 (593) 555-4122,Unverified

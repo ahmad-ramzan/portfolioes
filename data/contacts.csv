@@ -1,0 +1,9 @@
+First name,Last name,Email,Phone number,Job title,Company name,Company domain name,Lifecycle stage,Lead status,Contact owner
+Maria,Gonzalez,maria.gonzalez@northwindlogistics.com,+1-312-555-0142,VP Operations,Northwind Logistics,northwindlogistics.com,Opportunity,In Progress,Alex Rivera
+David,Chen,david.chen@northwindlogistics.com,+1-312-555-0188,IT Director,Northwind Logistics,northwindlogistics.com,Opportunity,Open,Alex Rivera
+Priya,Nair,priya.nair@brightleaf.io,+1-512-555-0110,Head of Growth,BrightLeaf Analytics,brightleaf.io,Lead,New,Jordan Lee
+Tom,Baker,tom.baker@brightleaf.io,+1-512-555-0177,Founder & CEO,BrightLeaf Analytics,brightleaf.io,Lead,Open,Jordan Lee
+Sarah,Okafor,sarah.okafor@coastalretail.com,+1-305-555-0123,Director of Merchandising,Coastal Retail Group,coastalretail.com,Customer,Connected,Alex Rivera
+James,Whitfield,james.whitfield@coastalretail.com,+1-305-555-0199,CFO,Coastal Retail Group,coastalretail.com,Opportunity,In Progress,Alex Rivera
+Emily,Torres,emily.torres@coastalretail.com,+1-305-555-0164,Store Systems Lead,Coastal Retail Group,coastalretail.com,Opportunity,Open,Jordan Lee
+Kevin,Alvarez,kevin.alvarez@brightleaf.io,+1-512-555-0135,Sales Manager,BrightLeaf Analytics,brightleaf.io,Lead,New,Jordan Lee

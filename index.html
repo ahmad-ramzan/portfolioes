@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --orange: #FF631F;
+            --golden: #FBB439;
+            --charcoal: #232529;
+            --ink: #2b2d31;
+            --paper: #FAF9F7;
+            --card: #FFFFFF;
+            --line: #e8e5df;
+            --muted: #8a8781;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Roboto', system-ui, sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        .sg {
+            font-family: 'Montserrat', sans-serif
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ============ PREMIUM HEADER ============ */
+        .topbar {
+            position: relative;
+            background: linear-gradient(135deg, #232529 0%, #17181c 55%, #2b1d12 100%);
+            color: #ffffff;
+            padding: 16px 24px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .topbar::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--orange), var(--golden), var(--orange));
+            background-size: 200% 100%;
+            animation: gradientFlow 4s linear infinite;
+        }
+
+        .topbar-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .brand-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            flex: none;
+            background: linear-gradient(135deg, var(--orange), var(--golden), #ff512f);
+            background-size: 200% 200%;
+            animation: gradientFlow 3s ease infinite;
+            display: grid;
+            place-items: center;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 19px;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(255, 99, 31, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .brand-name {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 17.5px;
+            letter-spacing: -0.3px;
+        }
+
+        .brand-sub {
+            font-size: 11.5px;
+            color: #a1a1aa;
+            font-weight: 500;
+            margin-top: 2px;
+            letter-spacing: 0.2px;
+        }
+
+        .topbar .total {
+            margin-left: auto;
+            font-family: 'Montserrat';
+            font-size: 13px;
+            color: #e4e4e7;
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            backdrop-filter: blur(10px);
+        }
+
+        .topbar .total b {
+            color: var(--golden);
+            font-weight: 700;
+        }
+
+        /* ============ CONTROL BAR ============ */
+        .controls {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(250, 249, 247, .94);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .controls-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .chips {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            font-family: 'Montserrat';
+            font-size: 12.5px;
+            font-weight: 500;
+            padding: 7px 13px;
+            border-radius: 999px;
+            cursor: pointer;
+            border: 1px solid var(--line);
+            background: var(--card);
+            color: var(--ink);
+            transition: all .15s ease;
+            white-space: nowrap;
+        }
+
+        .chip .n {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 11px;
+            background: var(--paper);
+            border-radius: 999px;
+            padding: 1px 6px;
+            color: var(--muted);
+        }
+
+        .chip:hover {
+            border-color: var(--orange);
+            color: var(--orange)
+        }
+
+        .chip.active {
+            background: var(--charcoal);
+            color: #fff;
+            border-color: var(--charcoal)
+        }
+
+        .chip.active .n {
+            background: rgba(255, 255, 255, .14);
+            color: var(--golden)
+        }
+
+        /* ============ SECTIONS ============ */
+        main {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 36px 24px 80px
+        }
+
+        section {
+            margin-bottom: 54px;
+            scroll-margin-top: 76px
+        }
+
+        section.hidden {
+            display: none
+        }
+
+        .sec-head {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 18px;
+            flex-wrap: wrap
+        }
+
+        .sec-head h2 {
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: -.3px
+        }
+
+        .sec-head .count {
+            font-family: 'Montserrat';
+            font-size: 12.5px;
+            color: var(--orange);
+            border: 1px solid #ffd9c4;
+            background: #fff4ec;
+            border-radius: 999px;
+            padding: 1px 10px;
+        }
+
+        .sub-label {
+            font-family: 'Montserrat';
+            font-size: 11.5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--muted);
+            margin: 22px 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sub-label::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: var(--line)
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+            gap: 16px;
+        }
+
+        /* ============ IMAGE CARDS ============ */
+        .card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+            transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+        }
+
+        .card.hidden {
+            display: none
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #f4c9ad;
+            box-shadow: 0 14px 30px -16px rgba(35, 37, 41, .28);
+        }
+
+        .card:focus-visible {
+            outline: 2px solid var(--orange);
+            outline-offset: 2px
+        }
+
+        .thumb {
+            aspect-ratio: 16/10;
+            background: #eeece7;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            transition: transform .35s ease;
+        }
+
+        .card:hover .thumb img {
+            transform: scale(1.04)
+        }
+
+        /* placeholder tiles for Drive etc. */
+        .thumb.tile {
+            display: grid;
+            place-items: center;
+            background: linear-gradient(135deg, #2b2d31 0%, #232529 55%, #3a2c22 100%);
+            color: var(--golden);
+        }
+
+        .thumb.tile svg {
+            width: 34px;
+            height: 34px;
+            opacity: .95
+        }
+
+        .thumb.tile .tile-type {
+            position: absolute;
+            bottom: 9px;
+            left: 11px;
+            font-family: 'Montserrat';
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            color: #8f9093;
+        }
+
+        .open-hint {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            width: 27px;
+            height: 27px;
+            border-radius: 8px;
+            background: rgba(35, 37, 41, .65);
+            backdrop-filter: blur(4px);
+            display: grid;
+            place-items: center;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(-3px);
+            transition: all .18s ease;
+        }
+
+        .card:hover .open-hint {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .open-hint svg {
+            width: 13px;
+            height: 13px
+        }
+
+        .badge {
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            font-size: 9.5px;
+            font-weight: 600;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            color: #232529;
+            background: var(--golden);
+            border-radius: 5px;
+            padding: 2.5px 7px;
+            font-family: 'Montserrat';
+        }
+
+        .card-meta {
+            padding: 11px 13px 12px
+        }
+
+        .card-title {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 13.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-url {
+            font-size: 11.5px;
+            color: var(--muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 1px;
+        }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 28px 24px 38px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 12.5px;
+        }
+
+        footer b {
+            font-family: 'Montserrat';
+            color: var(--ink)
+        }
+
+        .empty {
+            display: none;
+            text-align: center;
+            padding: 70px 20px;
+            color: var(--muted)
+        }
+
+        .empty.show {
+            display: block
+        }
+
+        .empty .sg {
+            font-size: 19px;
+            color: var(--ink);
+            margin-bottom: 5px
+        }
+
+        @media (max-width:640px) {
+            main {
+                padding: 28px 14px 60px
+            }
+
+            .controls-inner {
+                padding: 10px 14px
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 11px
+            }
+
+            .card-meta {
+                padding: 9px 11px 10px
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                animation: none !important
+            }
+
+            html {
+                scroll-behavior: auto
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand-mark">J</div>
+            <div>
+                <div class="brand-name">Projects Portfolio</div>
+                <div class="brand-sub">Web · Apps · UI/UX · Web Scraping · AI Automation</div>
+            </div>
+            <div style="margin-left: auto; display: flex; gap: 10px; align-items: center;">
+                <a href="other-projects.html"
+                    style="color: var(--golden); text-decoration: none; font-size: 13px; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.2); padding: 5px 12px; border-radius: 999px; transition: 0.2s; background: rgba(255,255,255,0.05);">Other
+                    Categories &rarr;</a>
+                <div class="total" id="totalCount" style="margin-left: 0;"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="controls">
+        <div class="controls-inner">
+            <div class="chips" id="chips"></div>
+        </div>
+    </div>
+
+    <main id="main"></main>
+
+    <div class="empty" id="emptyState">
+        <div class="sg">No matches found</div>
+        <div>Try a different keyword or category.</div>
+    </div>
+
+    <footer>
+        <b>GWN Solutions</b> · Capability Portfolio
+    </footer>
+
+    <script>
+        const TILE_ICONS = {
+            drive: { label: 'Drive Folder', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m9 4 6 0 6 10-3 6H6l-3-6L9 4Z"/><path d="m9 4 5.5 10M21 14H10.5M6 20l5-9"/></svg>' },
+            video: { label: 'Video', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="5.5" width="13" height="13" rx="2.5"/><path d="m15.5 10.5 6-3.5v10l-6-3.5"/></svg>' },
+            audio: { label: 'Audio', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>' },
+            gear: { label: 'Automation', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3.2"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.5-2-3.4-2.3 1a7 7 0 0 0-2.1-1.2L14 3h-4l-.5 2.7a7 7 0 0 0-2.1 1.2l-2.3-1-2 3.4 2 1.5a7 7 0 0 0 0 2.4l-2 1.5 2 3.4 2.3-1a7 7 0 0 0 2.1 1.2L10 21h4l.5-2.7a7 7 0 0 0 2.1-1.2l2.3 1 2-3.4-2-1.5A7 7 0 0 0 19 12Z"/></svg>' },
+            cad: { label: 'CAD / 3D', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2.5 21 7v10l-9 4.5L3 17V7l9-4.5Z"/><path d="M3 7l9 4.5L21 7M12 11.5V21.5"/></svg>' },
+            figma: { label: 'Figma Design', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3h3v6H9a3 3 0 1 1 0-6Z"/><path d="M12 3h3a3 3 0 1 1 0 6h-3V3Z"/><path d="M9 9h3v6H9a3 3 0 1 1 0-6Z"/><circle cx="15" cy="12" r="3"/><path d="M9 15h3v3a3 3 0 1 1-3-3Z"/></svg>' },
+            data: { label: 'Data Scrape', svg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>' },
+        };
+
+        const DATA = [
+            {
+                id: 'wordpress', label: 'WordPress', h: 'WordPress Websites',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Asteras', u: 'https://asteras.com/', badge: 'Featured' },
+                            { t: 'Aldersage', u: 'https://aldersage.com/', badge: 'Featured' },
+                            { t: 'AV Equipment', u: 'https://avequipment.com.au/' },
+                            { t: 'GO Transit', u: 'https://gotransit.com.au/landing-page/' },
+                            { t: 'The SBA Shop', u: 'https://thesbashop.com/' },
+                            { t: 'Bolsador', u: 'https://bolsador.com/' },
+                            { t: 'CleanWash Laundry', u: 'https://cleanwashlaundry.com/' },
+                            { t: 'Alex Calibur', u: 'https://alexcalibur.com/' },
+                            { t: 'CrossFit Chemistry', u: 'https://crossfitchemistry.com.au/' },
+                            { t: 'Swiftbridge Capital', u: 'https://swiftbridgecapital.com/' },
+                            { t: 'Forta Capital', u: 'https://fortacapital.com/' },
+                            { t: 'Together for Truth', u: 'https://togetherfortruth.blog/' },
+                            { t: 'Fabiola', u: 'https://fabiolas12.sg-host.com/' },
+                            { t: 'LetRank', u: 'http://letrank.com/' },
+                            { t: 'Defused', u: 'https://defused.com' },
+                            { t: 'Justi-fy AI', u: 'https://justi-fy.ai/' },
+                            { t: 'Ahram Travels', u: 'https://ahramtravels.co.uk' },
+                            { t: 'BLA CMC (Staging)', u: 'https://blacmcstaging.wpengine.com' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'shopify', label: 'Shopify', h: 'Shopify Stores',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Roberto Collina', u: 'https://www.robertocollina.com/', badge: 'Featured' },
+                            { t: 'Shop Dress Up', u: 'https://shopdressup.com/', badge: 'Featured' },
+                            { t: 'Esther & Co.', u: 'https://www.esther.com.au/', badge: 'Featured' },
+                            { t: 'Lunii', u: 'https://lunii.com/fr-fr' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'react', label: 'ReactJS', h: 'ReactJS / JavaScript Apps',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Extell', u: 'https://extell.com/', badge: 'Featured', img: 'assets/thumbnails/extell_thumb.png' },
+                            { t: 'Chairish', u: 'https://www.chairish.com/', badge: 'Featured' },
+                            { t: 'Hyper Healthcare', u: 'https://www.hyper-healthcare.com/' },
+                            { t: 'Beacon Bay Trade Services', u: 'https://www.beaconbaytradeservices.com/' },
+                            { t: 'Plasma (App)', u: 'https://app.plasma.to/' },
+                            { t: 'Plasma', u: 'https://plasma-app.netlify.app/' },
+                            { t: 'AppHive', u: 'https://apphive.io/' },
+                            { t: 'Ezekia (Demo)', u: 'https://demo.ezekia.com/api' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'crm', label: 'CRM', h: 'CRM Dashboards & Platforms',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Litmus Dashboard', u: 'https://litmus-dashboard.vercel.app/' },
+                            { t: 'Perseus', u: 'https://perseus-peach.vercel.app/login' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'other', label: 'Other Builds', h: 'Other Builds (Wix, Framer, systeme.io)',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Modcon Homes', u: 'https://www.modconhomes.com.au/', img: 'assets/thumbnails/modconhomes_thumb.png' },
+                            { t: 'NOV8 Tech', u: 'https://nov8.tech/' },
+                            { t: 'Marcus & Sandy', u: 'https://marcusesandy.systeme.io/' },
+                            { t: 'StageRunner', u: 'https://stagerunner.net/' },
+                            { t: 'Oxford Comfort', u: 'https://oxfordcomfort.com/' },
+                            { t: 'Oak Harbor Web Designs — Reviews', u: 'https://oakharborwebdesigns.com/reviews/' },
+                            { t: 'GizmoGrind', u: 'https://gizmogrind.com' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'webux', label: 'Web UI/UX', h: 'Website UI/UX Design (Figma)',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'MYCELAB — Website Design', u: 'https://www.figma.com/design/wZYpCM4852LLaLJ7sChy62/MYCELAB_Website-Design', img: 'assets/figma/figma_mycelab.png' },
+                            { t: 'EWHIP — UI/UX Website', u: 'https://www.figma.com/design/BHBUthzlyHeTUlUZLZ4TO7/Blake-B._EWHIP_Ui-Ux-Website', img: 'assets/figma/figma_ewhip.png' },
+                            { t: 'WA Sangiovese — Winery Website', u: 'https://www.figma.com/design/He2VGsb3sGMP1blnpPqJhB/Sanjana_WA_Sangiovese_Website', img: 'assets/figma/figma_sangiovese.png' },
+                            { t: 'Sensolight — Website', u: 'https://www.figma.com/design/zKTcZRwXI6dMVK1tCdNETg/Sensolight-website', img: 'assets/figma/figma_sensolight.png' },
+                            { t: 'Interior Design — Website', u: 'https://www.figma.com/design/sRn7L2O56by1XEMuY4que1/Interior-Design-Website', img: 'assets/figma/figma_interior.png' },
+                            { t: 'The Spice Theory — Website', u: 'https://www.figma.com/design/GQuPovKZ8gTVGm4OUPw9qO/The-Spice-Theory_website_design', img: 'assets/figma/figma_spicetheory.png' },
+                            { t: 'Exclusive Cars — Web Design', u: 'https://www.figma.com/design/7lUL8ICJWLp7msOrTiPmuk/Furkan-U._Exclusive-cars-websidesign', img: 'assets/figma/figma_exclusivecars.png' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'appux', label: 'App UI/UX', h: 'Mobile App UI/UX Design (Figma)',
+                groups: [
+                    {
+                        sub: null, items: [
+                            { t: 'Swish — Social App UI/UX', u: 'https://www.figma.com/design/zQq4umTKPLTFcdYVvk4Ogt/Mirko_Swish-app_Ui-Ux-design', img: 'assets/figma/figma_swish.png' },
+                            { t: 'Outfind — App Design', u: 'https://www.figma.com/design/D8sS1Tn8CPgbhzfz9XRTXb/Marijo_M._Outfind-App-design', img: 'assets/figma/figma_outfind.png' },
+                            { t: 'Kollabz — App Design', u: 'https://www.figma.com/design/nKP41pFQWLBUvwJ22l8pOz/Marijo_M._Kollabz-App-design', img: 'assets/figma/figma_kollabz.png' },
+                            { t: 'FreelanZ — AI App UI/UX', u: 'https://www.figma.com/design/6CV2s3Jt574x3lhmOexRac/FreelanZ-App-AI-UI%2FUX-design', img: 'assets/figma/figma_freelanz.png' },
+                            { t: 'Babysitting App — Design', u: 'https://www.figma.com/design/RkAr8Y2SQjSluvUakJOFyA/Babysitting-app-design---app', img: 'assets/figma/figma_babysitting.png' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'apps', label: 'Published Apps', h: 'Published Mobile Apps',
+                groups: [
+                    {
+                        sub: 'TrakMD — Doctor & patient platform', items: [
+                            { t: 'TrakMD Website', u: 'https://trakmd.com/' },
+                            { t: 'TrakMD — Google Play', u: 'https://play.google.com/store/apps/details?id=com.trakmd&hl=en' },
+                            { t: 'TrakMD — App Store', u: 'https://apps.apple.com/us/app/trakmd-doctor-app/id1476907007' },
+                        ]
+                    },
+                    {
+                        sub: 'Zenklub — Mental wellness platform', items: [
+                            { t: 'Zenklub Website', u: 'https://zenklub.com.br/', img: 'assets/thumbnails/zenklub_thumb.png' },
+                            { t: 'Zenklub — Google Play', u: 'https://play.google.com/store/apps/details?id=com.zenklub.android' },
+                            { t: 'Zenklub — App Store', u: 'https://apps.apple.com/br/app/zenklub-se-conhecer-faz-bem/id1282953238' },
+                        ]
+                    },
+                    {
+                        sub: 'More published apps', items: [
+                            { t: 'Fujitec eClaim', u: 'https://play.google.com/store/apps/details?id=com.fujitec.fujitec_eclaim' },
+                            { t: 'Mashraben Aab', u: 'https://play.google.com/store/apps/details?id=com.azaan.mashrabenaab' },
+                            { t: 'Crypto App', u: 'https://play.google.com/store/apps/details?id=com.myblackmarkete.cypto_app' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'auto', label: 'AI Automation', h: 'AI Automation & Workflows',
+                groups: [
+                    {
+                        sub: 'Make.com Scenarios', items: [
+                            { t: 'Modern Law — Complete Workflow', u: 'assets/automation/make1.jpeg', img: 'assets/automation/make1.jpeg' },
+                            { t: 'Modern Law — Workflow (Detail)', u: 'assets/automation/make2.jpeg', img: 'assets/automation/make2.jpeg' },
+                            { t: 'Zoom Summary Escalation', u: 'assets/automation/make3.jpeg', img: 'assets/automation/make3.jpeg' },
+                        ]
+                    },
+                    {
+                        sub: 'n8n Workflows', items: [
+                            { t: 'User Onboarding — AI Agent', u: 'assets/automation/n8n1.png', img: 'assets/automation/n8n1.png' },
+                            { t: 'User Onboarding — Tools Agent', u: 'assets/automation/n8n2.png', img: 'assets/automation/n8n2.png' },
+                            { t: 'GitHub Trending — Repo Digest', u: 'assets/automation/n8n3.png', img: 'assets/automation/n8n3.png' },
+                        ]
+                    },
+                ]
+            },
+            {
+                id: 'scraping', label: 'Web Scraping', h: 'Web Scraping & Data Extraction',
+                groups: [
+                    {
+                        sub: 'Google, Apollo & Apify Extracts', items: [
+                            { t: 'Companies Data', u: 'data/companies.csv', img: 'data/companies_sheet.png' },
+                            { t: 'Contacts Data', u: 'data/contacts.csv', img: 'data/contacts_sheet.png' },
+                            { t: 'Deals Data', u: 'data/deals.csv', img: 'data/contacts_sheet.png' },
+                            { t: 'SaaS Marketing Leads (CSV)', u: 'data/saas_marketing_directors_leads.csv', img: 'data/companies_sheet.png' },
+                            { t: 'SaaS Marketing Leads (XLSX)', u: 'data/saas_marketing_directors_leads.xlsx', img: 'data/contacts_sheet.png' },
+                        ]
+                    },
+                ]
+            },
+        ];
+
+        /* ============================================================ RENDER */
+        const main = document.getElementById('main');
+        const chipsEl = document.getElementById('chips');
+        const emptyState = document.getElementById('emptyState');
+
+        function hostOf(u) { try { return new URL(u).hostname.replace('www.', ''); } catch (e) { return u.split('/').pop(); } }
+
+        /* Live screenshot via WordPress mShots (free, no API key).
+           First request generates the shot, so a few thumbs may take a
+           refresh or two to appear the very first time the page is opened. */
+        function shotUrl(u) {
+            return 'https://s.wordpress.com/mshots/v1/' + encodeURIComponent(u) + '?w=640&h=400';
+        }
+
+        function tileHtml(kind, url) {
+            const t = TILE_ICONS[kind] || TILE_ICONS.drive;
+            return `<div class="thumb tile">${t.svg}<span class="tile-type">${t.label}</span></div>`;
+        }
+
+        function thumbHtml(it) {
+            if (it.img) {
+                return `<div class="thumb"><img loading="lazy" src="${it.img}" alt="${it.t} screenshot" style="object-position: center;"></div>`;
+            }
+            if (it.tile) return tileHtml(it.tile, it.u);
+            if (it.u.includes('figma.com')) {
+                /* Figma files need login for mShots — branded tile instead */
+                return `<div class="thumb tile">${TILE_ICONS.figma.svg}<span class="tile-type">Figma Design</span></div>`;
+            }
+            return `<div class="thumb"><img loading="lazy" src="${shotUrl(it.u)}" alt="${it.t} screenshot"
+    onerror="this.parentElement.outerHTML='<div class=&quot;thumb tile&quot;>${'<'}svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.7&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;9&quot;/><path d=&quot;M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18&quot;/></svg><span class=&quot;tile-type&quot;>Website</span></div>'"></div>`;
+        }
+
+        let totalLinks = 0;
+        DATA.forEach(cat => {
+            const sec = document.createElement('section');
+            sec.id = 'sec-' + cat.id;
+            sec.dataset.cat = cat.id;
+            let count = 0, inner = '';
+            cat.groups.forEach(g => {
+                if (g.sub) inner += `<div class="sub-label">${g.sub}</div>`;
+                inner += `<div class="grid">`;
+                g.items.forEach(it => {
+                    count++; totalLinks++;
+                    const badge = it.badge ? `<span class="badge">${it.badge}</span>` : '';
+                    inner += `
+      <a class="card" href="${it.u}" target="_blank" rel="noopener"
+         data-search="${(it.t + ' ' + it.u + ' ' + cat.label).toLowerCase()}">
+        ${thumbHtml(it)}
+        ${badge}
+        <span class="open-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        <div class="card-meta">
+          <div class="card-title">${it.t}</div>
+          <div class="card-url">${hostOf(it.u)}</div>
+        </div>
+      </a>`;
+                });
+                inner += `</div>`;
+            });
+            sec.innerHTML = `
+    <div class="sec-head"><h2>${cat.h}</h2><span class="count">${count}</span></div>
+    ${inner}`;
+            main.appendChild(sec);
+            cat._count = count;
+        });
+
+        document.getElementById('totalCount').innerHTML = `<b>${totalLinks}</b> projects · ${DATA.length} categories`;
+
+        /* chips */
+        let active = 'all';
+        function renderChips() {
+            chipsEl.innerHTML =
+                `<button class="chip ${active === 'all' ? 'active' : ''}" data-cat="all">All <span class="n">${totalLinks}</span></button>` +
+                DATA.map(c => `<button class="chip ${active === c.id ? 'active' : ''}" data-cat="${c.id}">${c.label} <span class="n">${c._count}</span></button>`).join('');
+        }
+        /* ---- category routing via URL hash (deep-linkable) ---- */
+        const validCats = ['all', ...DATA.map(c => c.id)];
+
+        function applyRoute(scroll) {
+            const cat = decodeURIComponent(location.hash.replace(/^#/, ''));
+            active = validCats.includes(cat) ? cat : 'all';
+            renderChips();
+            applyFilter();
+            if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        chipsEl.addEventListener('click', e => {
+            const b = e.target.closest('.chip'); if (!b) return;
+            const cat = b.dataset.cat;
+            if (cat === 'all') {
+                /* drop the hash without leaving a bare "#" in the URL */
+                history.replaceState('', document.title, location.pathname + location.search);
+                applyRoute(true);
+            } else if (location.hash.slice(1) === cat) {
+                applyRoute(true);            // re-clicking the active chip: just scroll up
+            } else {
+                location.hash = cat;         // triggers 'hashchange' -> applyRoute
+            }
+        });
+
+        window.addEventListener('hashchange', () => applyRoute(true));
+
+        /* category filter */
+        function applyFilter() {
+            let visibleTotal = 0;
+            document.querySelectorAll('section[data-cat]').forEach(sec => {
+                const catMatch = active === 'all' || sec.dataset.cat === active;
+                let visInSec = 0;
+                sec.querySelectorAll('.card').forEach(card => {
+                    card.classList.toggle('hidden', !catMatch);
+                    if (catMatch) visInSec++;
+                });
+                sec.querySelectorAll('.grid').forEach(grid => {
+                    const any = grid.querySelector('.card:not(.hidden)');
+                    grid.style.display = any ? '' : 'none';
+                    const lbl = grid.previousElementSibling;
+                    if (lbl && lbl.classList.contains('sub-label')) lbl.style.display = any ? '' : 'none';
+                });
+                sec.classList.toggle('hidden', visInSec === 0);
+                visibleTotal += visInSec;
+            });
+            emptyState.classList.toggle('show', visibleTotal === 0);
+        }
+
+        /* initialize category from the URL hash on load (deep-link support) */
+        applyRoute(false);
+    </script>
+</body>
+
+</html>
