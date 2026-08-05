@@ -889,7 +889,9 @@
             if (isVideoItem(it, catId)) {
                 const fileId = getDriveFileId(it.u);
                 if (fileId) {
-                    return `<div class="thumb video-embed"><iframe data-src="https://drive.google.com/file/d/${fileId}/preview" allow="autoplay" style="width:100%; height:100%; border:none; background:#000;"></iframe></div>`;
+                    const imgSrc = (it.img && !it.img.includes('assets/thumbnails')) ? it.img : `https://drive.google.com/thumbnail?id=${fileId}&sz=w640`;
+                    return `<div class="thumb"><img loading="lazy" src="${imgSrc}" alt="${it.t} thumbnail" style="object-position: center;"
+    onerror="this.onerror=null;this.parentElement.outerHTML='<div class=&quot;thumb tile&quot;><svg viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.7&quot;><rect x=&quot;2.5&quot; y=&quot;5.5&quot; width=&quot;13&quot; height=&quot;13&quot; rx=&quot;2.5&quot;/><path d=&quot;m15.5 10.5 6-3.5v10l-6-3.5&quot;/></svg><span class=&quot;tile-type&quot;>Video</span></div>'"><div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></div></div>`;
                 }
                 const folderId = getDriveFolderId(it.u);
                 if (folderId) {
